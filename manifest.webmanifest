@@ -2,8 +2,8 @@
 	"theme_color": "#f69435",
 	"background_color": "#f69435",
 	"display": "standalone",
-	"scope": "https://koppesan-2.github.io/lyricviewer/",
-	"start_url": "/lyricviewer.html",
+	"scope": "https://koppesan-2.github.io/",
+	"start_url": "/lyricviewer/lyricviewer.html",
 	"name": "lyricviewer",
 	"short_name": "lyricviewer",
 	"icons": [
