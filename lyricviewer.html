@@ -11,9 +11,27 @@
         if(navigator.serviceWorker){
             navigator.serviceWorker.register("/js/service-worker.js")
         }
-        Notification.requestPermission().then((result) => {
-            console.log(result);
-        });
+        var button = document.getElementById("notifications");
+button.addEventListener("click", function (e) {
+  Notification.requestPermission().then(function (result) {
+    if (result === "granted") {
+      randomNotification();
+    }
+  });
+});
+function randomNotification() {
+  var randomItem = Math.floor(Math.random() * games.length);
+  var notifTitle = games[randomItem].name;
+  var notifBody = "Created by " + games[randomItem].author + ".";
+  var notifImg = "data/img/" + games[randomItem].slug + ".jpg";
+  var options = {
+    body: notifBody,
+    icon: notifImg,
+  };
+  var notif = new Notification(notifTitle, options);
+  setTimeout(randomNotification, 30000);
+}
+
         function notifi(){
             if (Notification.permission === 'granted') {
         const notification = new Notification('通知のタイトル', {
@@ -29,7 +47,7 @@
 <body>
     <div class="loading"><span class="loadtext">読み込み中・・・</span></div>
     <button onclick="notifi()">通知</button>
-    
+    <button id="notifications"></button>
     <ui></ui>
 </body>
 </html>
