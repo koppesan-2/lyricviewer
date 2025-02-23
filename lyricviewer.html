@@ -11,11 +11,24 @@
         if(navigator.serviceWorker){
             navigator.serviceWorker.register("/js/service-worker.js")
         }
+        Notification.requestPermission().then((result) => {
+            console.log(result);
+        });
+        function notifi(){
+            if (Notification.permission === 'granted') {
+        const notification = new Notification('通知のタイトル', {
+            body: 'これは通知の本文です。',
+            icon: 'icon.png'
+        });
+        navigator.setAppBadge(10)
+        }
+        }
     </script>
     <title>lyricviewer v.α1</title>
 </head>
 <body>
     <div class="loading"><span class="loadtext">読み込み中・・・</span></div>
+    <button onclick="notifi()">通知</button>
     <ui></ui>
 </body>
 </html>
