@@ -11,14 +11,13 @@
         if(navigator.serviceWorker){
             navigator.serviceWorker.register("/js/service-worker.js")
         }
-        var button = document.getElementById("notifications");
-button.addEventListener("click", function (e) {
+function notifi2() {
   Notification.requestPermission().then(function (result) {
     if (result === "granted") {
       randomNotification();
     }
   });
-});
+};
 function randomNotification() {
   var randomItem = Math.floor(Math.random() * games.length);
   var notifTitle = games[randomItem].name;
@@ -47,7 +46,7 @@ function randomNotification() {
 <body>
     <div class="loading"><span class="loadtext">読み込み中・・・</span></div>
     <button onclick="notifi()">通知</button>
-    <button id="notifications">通知2</button>
+    <button onclick="notifi2()">通知2</button>
     <ui></ui>
 </body>
 </html>
