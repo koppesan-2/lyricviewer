@@ -1,0 +1,54 @@
+{
+	"theme_color": "#f69435",
+	"background_color": "#f69435",
+	"display": "fullscreen",
+	"scope": "/",
+	"start_url": "/",
+	"name": "lyricviewer",
+	"short_name": "lyricviewer",
+	"icons": [
+        {
+            "src": "./img/512testlyric.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+	],
+    "description": "歌詞(lyric)を表示するために作ったアプリです。\n再生・編集・インポート・エクスポートができます。\n製作者 koppesan",
+	"screenshots": [
+        {
+        "src": "./img/512testlyric.png",
+        "sizes": "1125x2300",
+        "type": "image/jpg"
+        }
+	],
+    "shortcuts": [
+        {
+        "name": "ホーム",
+        "short_name": "home",
+        "description": "ホーム画面へ移動",
+        "url": "/",
+        "icons": [{ "src": "./img/icons/house.svg", "sizes": "576x512" }]
+        },
+        {
+        "name": "再生",
+        "short_name": "play",
+        "description": "再生画面へ",
+        "url": "/lyricviewer.html#play",
+        "icons": [{ "src": "./img/icons/circle-play.svg", "sizes": "512x512" }]
+        },
+        {
+        "name":"編集",
+        "short_name":"edit",
+        "description":"編集画面へ",
+        "url":"/lyricviewer.html#editor",
+        "icons":[{"src":"./img/icons/pen.svg","sizes":"512x512"}]
+        },
+        {
+        "name": "設定",
+        "short_name": "setting",
+        "description": "設定をします",
+        "url": "/lyricviewer.html#setting",
+        "icons": [{ "src": "./img/icons/gear.svg", "sizes": "512x512" }]
+        }
+    ]
+}
