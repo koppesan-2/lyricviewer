@@ -27,6 +27,10 @@
         });
         navigator.setAppBadge(10)
         }
+        navigator.serviceWorker.ready.then((registration) => {
+            registration.active.postMessage("Hi service worker");
+        });
+
         }
     </script>
     <title>lyricviewer v.α1</title>
