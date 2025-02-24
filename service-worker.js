@@ -1,11 +1,10 @@
 self.addEventListener('fetch', function (e) {
     console.log('service worker fetch')
 })
-self.addEventListener('install', function (e) {
+self.addEventListener('install',  (event)=> {
+    self.skipWaiting()
 })
-self.addEventListener('activate', function (e) {
+self.addEventListener('activate', (event) => {
+    event.waitUntil(clients.claim())
     console.log('service worker install')
-    Notification.requestPermission().then((result) => {
-        console.log(result);
-    });
 })

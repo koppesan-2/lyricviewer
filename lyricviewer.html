@@ -11,6 +11,9 @@
         if(navigator.serviceWorker){
             navigator.serviceWorker.register("/service-worker.js")
         }
+    Notification.requestPermission().then((result) => {
+        console.log(result);
+    });
 
 
         function notifi(){
