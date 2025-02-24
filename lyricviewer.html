@@ -14,12 +14,12 @@
             }else{
             navigator.serviceWorker.register("/service-worker.js")
         }}
-    Notification.requestPermission().then((result) => {
-        console.log(result);
-    });
 
 
         function notifi(){
+        Notification.requestPermission().then((result) => {
+            console.log(result);
+        });
             if (Notification.permission === 'granted') {
         const notification = new Notification('通知のタイトル', {
             body: 'これは通知の本文です。',
