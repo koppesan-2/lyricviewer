@@ -2,22 +2,22 @@
 	"theme_color": "#f69435",
 	"background_color": "#f69435",
 	"display": "standalone",
-	"scope": "/",
+	"scope": "/lyricviewer",
 	"start_url": "/lyricviewer/lyricviewer.html",
 	"name": "lyricviewer",
 	"short_name": "lyricviewer",
 	"icons": [
         {
-            "src": "./img/512testlyric.png",
-            "sizes": "512x512",
+            "src": "./img/500testlyric.png",
+            "sizes": "500x500",
             "type": "image/png"
         }
 	],
     "description": "歌詞(lyric)を表示するために作ったアプリです。\n再生・編集・インポート・エクスポートができます。\n製作者 koppesan",
 	"screenshots": [
         {
-        "src": "./img/512testlyric.png",
-        "sizes": "1125x2300",
+        "src": "./img/500testlyric.png",
+        "sizes": "500x500",
         "type": "image/jpg"
         }
 	],
