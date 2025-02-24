@@ -23,7 +23,7 @@
             if (Notification.permission === 'granted') {
         const notification = new Notification('通知のタイトル', {
             body: 'これは通知の本文です。',
-            icon: window.location.href.indexOf("https://koppesan-2github.io")==-1?"/img/icons/circle-play.svg":"/lyricviewer/img/icons/circle-play.svg"
+            icon: window.location.href.indexOf("https://koppesan-2github.io")!==-1?"/img/icons/circle-play.svg":"/lyricviewer/img/icons/circle-play.svg"
         });
         navigator.setAppBadge(10)
         }
