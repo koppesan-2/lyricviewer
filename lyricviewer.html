@@ -28,7 +28,7 @@
         navigator.setAppBadge(10)
         }
         navigator.serviceWorker.ready.then((registration) => {
-            registration.active.postMessage("Hi service worker");
+            registration.active.postMessage({title:"Hi service worker",msg:"あ",icon:window.location.href.indexOf("https://koppesan-2github.io")!==-1?"/img/icons/circle-play.svg":"/lyricviewer/img/icons/circle-play.svg"});
         });
 
         }

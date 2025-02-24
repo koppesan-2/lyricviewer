@@ -10,9 +10,9 @@ self.addEventListener('activate', (event) => {
 })
 self.addEventListener('message', event => {
     if (event.data !== null) {
-      void self.registration.showNotification(event.data, {
-        body: 'PWA Sample notification.',
-        icon: "https://koppesan-2.hithub.io/lyricviewer/img/icons/pen.svg"
+      void self.registration.showNotification(event.data.title, {
+        body: event.data.body,
+        icon: event.data.icon
       })
     }
   })
