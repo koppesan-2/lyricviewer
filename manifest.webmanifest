@@ -26,7 +26,7 @@
         "name": "ホーム",
         "short_name": "home",
         "description": "ホーム画面へ移動",
-        "url": "/",
+        "url": "/lyricviewer/lyricviewer.html",
         "icons": [{ "src": "./img/icons/house.svg", "sizes": "576x512" }]
         },
         {
