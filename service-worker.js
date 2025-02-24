@@ -12,7 +12,7 @@ self.addEventListener('message', event => {
     if (event.data !== null) {
       void self.registration.showNotification(event.data, {
         body: 'PWA Sample notification.',
-        icon: '/labo-round-icon-192x192.png'
+        icon: '/img/icons/house.svg'
       })
     }
   })
