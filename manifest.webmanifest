@@ -3,6 +3,7 @@
 	"background_color": "#f69435",
 	"display": "standalone",
 	"scope": "/lyricviewer",
+    "id":"lyricviewer",
 	"start_url": "/lyricviewer/lyricviewer.html",
 	"name": "lyricviewer",
 	"short_name": "lyricviewer",
@@ -18,7 +19,13 @@
         {
         "src": "./img/500testlyric.png",
         "sizes": "500x500",
-        "type": "image/jpg"
+        "type": "image/png"
+        },
+        {
+        "src":"./img/500testlyric.png",
+        "sizes":"500x500",
+        "type":"image/png",
+        "form_factor":"wide"
         }
 	],
     "shortcuts": [

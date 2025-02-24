@@ -10,10 +10,9 @@ self.addEventListener('activate', (event) => {
 })
 self.addEventListener('message', event => {
     if (event.data !== null) {
-      void self.registration.showNotification(event.data.title, {
+        void self.registration.showNotification(event.data.title, {
         body: event.data.body,
         icon: event.data.icon
-      })
+        })
     }
-  })
-  
+})
