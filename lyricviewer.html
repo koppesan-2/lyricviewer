@@ -10,7 +10,7 @@
     <script>
         if(navigator.serviceWorker){
             if(window.location.href.indexOf("https://koppesan-2github.io"!==-1)){
-            navigator.serviceWorker.register("/lyricviewer/lyricviewer.html")
+            navigator.serviceWorker.register("/lyricviewer/service-worker.js")
             }else{
             navigator.serviceWorker.register("/service-worker.js")
         }}
